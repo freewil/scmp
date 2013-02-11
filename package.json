@@ -13,7 +13,10 @@
   "keywords": [
     "safe-compare",
     "compare",
-    "time-equivalent-comparison"
+    "time-equivalent-comparison",
+    "time equivalent",
+    "constant-time",
+    "constant time"
   ],
   "author": "Sean Lavine",
   "license": "BSD",

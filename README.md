@@ -10,6 +10,10 @@ Safe, constant-time comparison of strings.
 npm install scmp
 ```
 
+## Why?
+
+To minimize vulnerability against [timing attacks](http://codahale.com/a-lesson-in-timing-attacks/).
+
 ## Examples
 
 ```js
