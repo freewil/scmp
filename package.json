@@ -1,7 +1,7 @@
 {
   "name": "scmp",
   "version": "0.0.1",
-  "description": "time-equivalent string-comparison function",
+  "description": "safe, constant-time string-comparison",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
