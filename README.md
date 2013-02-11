@@ -2,4 +2,4 @@
 
 [![Build Status](https://travis-ci.org/freewil/scmp.png)](https://travis-ci.org/freewil/scmp)
 
-Safe, time-equivalent comparison of strings.
+Safe, constant-time comparison of strings.
