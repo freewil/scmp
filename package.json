@@ -1,6 +1,6 @@
 {
   "name": "scmp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "safe, constant-time string-comparison",
   "main": "index.js",
   "scripts": {
