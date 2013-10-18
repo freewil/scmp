@@ -4,7 +4,8 @@
   "description": "safe, constant-time string-comparison",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "posttest": "matcha"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "license": "BSD",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "mocha": "~1.8.1"
+    "mocha": "~1.13.0",
+    "matcha": "~0.4.0"
   }
 }
