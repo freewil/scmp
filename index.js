@@ -7,6 +7,8 @@
  * @return {Boolean}
  */
 module.exports = function scmp(a, b) {
+  a = String(a);
+  b = String(b);
   if (a.length !== b.length) {
     return false;
   }

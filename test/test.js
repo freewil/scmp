@@ -13,4 +13,12 @@ describe('scmp', function() {
     assert.ifError(scmp('abc', 'b'));
     assert.ifError(scmp('e727d1464ae12436e899a726da5b2f11d8381b26', 'e727e1b80e448a213b392049888111e1779a52db'));
   });
+  
+  it('should not throw errors for non-strings', function() {
+    assert.ifError(scmp('a', {}));
+    assert.ifError(scmp({}, 'b'));
+    assert.ifError(scmp(1, 2));
+    assert.ifError(scmp(undefined, 2));
+    assert.ifError(scmp(null, 2));
+  });
 });
