@@ -1,4 +1,16 @@
-# scmp [![Build Status](https://travis-ci.org/freewil/scmp.svg?branch=master)](https://travis-ci.org/freewil/scmp)
+# scmp
+[![travis][travis-image]][travis-url]
+[![npm][npm-image]][npm-url]
+[![downloads][downloads-image]][downloads-url]
+
+[travis-image]: https://travis-ci.org/freewil/scmp.svg?branch=master
+[travis-url]: https://travis-ci.org/freewil/scmp
+
+[npm-image]: https://img.shields.io/npm/v/scmp.svg?style=flat
+[npm-url]: https://npmjs.org/package/scmp
+
+[downloads-image]: https://img.shields.io/npm/dm/scmp.svg?style=flat
+[downloads-url]: https://npmjs.org/package/scmp
 
 Safe, constant-time comparison of strings.
 
