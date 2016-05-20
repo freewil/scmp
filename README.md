@@ -24,13 +24,13 @@ npm install scmp
 
 To minimize vulnerability against [timing attacks](http://codahale.com/a-lesson-in-timing-attacks/).
 
-## Examples
+## Example
 
 ```js
-var scmp = require('scmp');
+const scmp = require('scmp');
 
-var hash      = 'e727d1464ae12436e899a726da5b2f11d8381b26';
-var givenHash = 'e727e1b80e448a213b392049888111e1779a52db';
+const hash      = 'e727d1464ae12436e899a726da5b2f11d8381b26';
+const givenHash = 'e727e1b80e448a213b392049888111e1779a52db';
 
 if (scmp(hash, givenHash)) {
   console.log('good hash');
