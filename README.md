@@ -14,6 +14,8 @@
 
 Safe, constant-time comparison of strings.
 
+**NOTE**: If you're using Node.js, since v6.6.0, you should use [crypto.timingSafeEqual(a, b)](https://nodejs.org/dist/latest-v6.x/docs/api/crypto.html#crypto_crypto_timingsafeequal_a_b)
+
 ## Install
 
 ```
