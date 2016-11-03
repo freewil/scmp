@@ -22,6 +22,9 @@
   "author": "Sean Lavine",
   "license": "BSD",
   "readmeFilename": "README.md",
+  "engines": {
+    "node": "<6.6.0"
+  },
   "devDependencies": {
     "mocha": "~1.13.0",
     "matcha": "~0.4.0"
