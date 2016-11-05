@@ -1,7 +1,7 @@
 {
   "name": "scmp",
   "version": "1.0.2",
-  "description": "safe, constant-time string-comparison",
+  "description": "safe, constant-time comparison of Buffers",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -24,6 +24,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "matcha": "^0.7.0",
-    "mocha": "^3.1.2"
-  }
+    "mocha": "^3.1.2",
+    "safe-buffer": "^5.0.1"
+  },
+  "dependencies": {}
 }
