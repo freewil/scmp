@@ -1,21 +1,31 @@
+var crypto = require('crypto');
+var scmpCompare = require('./lib/scmpCompare');
+
 /**
- * Does a constant-time string comparison by not short-circuiting
+ * Does a constant-time Buffer comparison by not short-circuiting
  * on first sign of non-equivalency.
- * 
- * @param {String} a The first string to be compared against the second
- * @param {String} b The second string to be compared against the first 
+ *
+ * @param {Buffer} a The first Buffer to be compared against the second
+ * @param {Buffer} b The second Buffer to be compared against the first
  * @return {Boolean}
  */
-module.exports = function scmp(a, b) {
-  a = String(a);
-  b = String(b);
-  var len = a.length;
-  if (len !== b.length) {
+module.exports = function scmp (a, b) {
+  // check that both inputs are buffers
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new Error('Both scmp args must be Buffers');
+  }
+
+  // return early here if buffer lengths are not equal since timingSafeEqual
+  // will throw if buffer lengths are not equal
+  if (a.length !== b.length) {
     return false;
   }
-  var result = 0;
-  for (var i = 0; i < len; ++i) {
-    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+
+  // use crypto.timingSafeEqual if available (since Node.js v6.6.0),
+  // otherwise use our own scmp-internal function.
+  if (crypto.timingSafeEqual) {
+    return crypto.timingSafeEqual(a, b);
   }
-  return result === 0;
+
+  return scmpCompare(a, b);
 };
