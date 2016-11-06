@@ -38,8 +38,8 @@ To minimize vulnerability against [timing attacks](http://codahale.com/a-lesson-
 const scmp = require('scmp');
 const Buffer = require('safe-buffer').Buffer;
 
-const hash      = Buffer.from('e727d1464ae12436e899a726da5b2f11d8381b26', 'utf8');
-const givenHash = Buffer.from('e727e1b80e448a213b392049888111e1779a52db', 'utf8');
+const hash      = Buffer.from('e727d1464ae12436e899a726da5b2f11d8381b26', 'hex');
+const givenHash = Buffer.from('e727e1b80e448a213b392049888111e1779a52db', 'hex');
 
 if (scmp(hash, givenHash)) {
   console.log('good hash');
