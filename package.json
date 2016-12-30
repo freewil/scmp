@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "posttest": "node benchmark/benchmark.js"
+    "posttest": "node benchmark/benchmark.js && node benchmark/crypto-check.js"
   },
   "repository": {
     "type": "git",
