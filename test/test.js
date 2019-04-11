@@ -13,9 +13,9 @@ describe('scmp', function() {
   });
 
   it('should return false for non-identical strings', function() {
-    assert.ifError(scmp(Buffer.from('a', 'utf8'), Buffer.from('b', 'utf8')));
-    assert.ifError(scmp(Buffer.from('abc', 'utf8'), Buffer.from('b', 'utf8')));
-    assert.ifError(scmp(Buffer.from('e727d1464ae12436e899a726da5b2f11d8381b26', 'hex'), Buffer.from('e727e1b80e448a213b392049888111e1779a52db', 'hex')));
+    assert(!scmp(Buffer.from('a', 'utf8'), Buffer.from('b', 'utf8')));
+    assert(!scmp(Buffer.from('abc', 'utf8'), Buffer.from('b', 'utf8')));
+    assert(!scmp(Buffer.from('e727d1464ae12436e899a726da5b2f11d8381b26', 'hex'), Buffer.from('e727e1b80e448a213b392049888111e1779a52db', 'hex')));
   });
 
   it('should throw errors for non-Buffers', function() {
