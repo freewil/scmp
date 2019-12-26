@@ -1,3 +1,5 @@
+'use strict'
+
 var crypto = require('crypto')
 var Benchmark = require('benchmark')
 
