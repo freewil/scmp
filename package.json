@@ -4,6 +4,7 @@
   "description": "safe, constant-time comparison of Buffers",
   "main": "index.js",
   "scripts": {
+    "pretest": "standard --verbose",
     "test": "mocha",
     "posttest": "node benchmark/benchmark.js && node benchmark/crypto-check.js"
   },
