@@ -1,6 +1,6 @@
 {
   "name": "scmp",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "safe, constant-time comparison of Buffers",
   "main": "index.js",
   "scripts": {
