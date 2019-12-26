@@ -1,3 +1,7 @@
+/* eslint-env mocha */
+
+'use strict'
+
 var assert = require('assert')
 var scmp = require('../')
 
