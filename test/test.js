@@ -1,13 +1,12 @@
 /* eslint-env mocha */
-
 'use strict'
 
-var assert = require('assert')
-var scmp = require('../')
+const assert = require('assert')
+const scmp = require('../')
 
 // use safe-buffer in case Buffer.from in newer versions of node aren't
 // available
-var Buffer = require('safe-buffer').Buffer
+const Buffer = require('safe-buffer').Buffer
 
 describe('scmp', function () {
   it('should return true for identical strings', function () {

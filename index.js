@@ -1,7 +1,7 @@
 'use strict'
 
-var crypto = require('crypto')
-var scmpCompare = require('./lib/scmpCompare')
+const crypto = require('crypto')
+const scmpCompare = require('./lib/scmpCompare')
 
 /**
  * Does a constant-time Buffer comparison by not short-circuiting
