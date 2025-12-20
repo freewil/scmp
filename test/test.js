@@ -4,10 +4,6 @@
 const assert = require('assert')
 const scmp = require('../')
 
-// use safe-buffer in case Buffer.from in newer versions of node aren't
-// available
-const Buffer = require('safe-buffer').Buffer
-
 describe('scmp', function () {
   it('should return true for identical strings', function () {
     assert(scmp(Buffer.from('a', 'utf8'), Buffer.from('a', 'utf8')))

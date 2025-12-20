@@ -28,7 +28,6 @@ To minimize vulnerability against [timing attacks](https://web.archive.org/web/2
 
 ```js
 const scmp = require('scmp');
-const Buffer = require('safe-buffer').Buffer;
 
 const hash      = Buffer.from('e727d1464ae12436e899a726da5b2f11d8381b26', 'hex');
 const givenHash = Buffer.from('e727e1b80e448a213b392049888111e1779a52db', 'hex');
