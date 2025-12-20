@@ -22,7 +22,7 @@ npm install scmp
 
 ## Why?
 
-To minimize vulnerability against [timing attacks](http://codahale.com/a-lesson-in-timing-attacks/).
+To minimize vulnerability against [timing attacks](https://web.archive.org/web/20250611150028/https://codahale.com/a-lesson-in-timing-attacks/).
 
 ## Example
 
