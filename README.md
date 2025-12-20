@@ -12,6 +12,8 @@
 [downloads-image]: https://img.shields.io/npm/dm/scmp.svg?style=flat
 [downloads-url]: https://npmjs.org/package/scmp
 
+**Just use [crypto.timingSafeEqual()](https://nodejs.org/docs/latest/api/crypto.html#cryptotimingsafeequala-b)**  
+
 Safe, constant-time comparison of Buffers.
 
 ## Install
