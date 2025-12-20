@@ -6,9 +6,6 @@ const Benchmark = require('benchmark')
 const scmpCompare = require('../lib/scmpCompare')
 const compareFn = crypto.timingSafeEqual || scmpCompare
 
-// `safe-buffer` in case `Buffer.from` in newer versions of node aren't available
-const Buffer = require('safe-buffer').Buffer
-
 const HASH1 = Buffer.from('e727d1464ae12436e899a726da5b2f11d8381b26', 'hex')
 const HASH2 = Buffer.from('f727d1464ae12436e899a726da5b2f11d8381b26', 'hex')
 

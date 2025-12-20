@@ -26,7 +26,6 @@
   "devDependencies": {
     "benchmark": "^2.1.4",
     "mocha": "^11.7.5",
-    "safe-buffer": "^5.2.1",
     "standard": "^17.1.2"
   }
 }
