@@ -1,10 +1,10 @@
 # scmp
-[![travis][travis-image]][travis-url]
+[![Node.js CI][ci-image]][ci-url]
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
-[travis-image]: https://travis-ci.org/freewil/scmp.svg?branch=master
-[travis-url]: https://travis-ci.org/freewil/scmp
+[ci-image]: https://github.com/freewil/scmp/actions/workflows/node.js.yml/badge.svg
+[ci-url]: https://github.com/freewil/scmp/actions/workflows/node.js.yml
 
 [npm-image]: https://img.shields.io/npm/v/scmp.svg?style=flat
 [npm-url]: https://npmjs.org/package/scmp

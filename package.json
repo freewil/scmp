@@ -25,9 +25,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "benchmark": "^2.1.4",
-    "mocha": "^7.1.0",
-    "safe-buffer": "^5.1.2",
-    "standard": "^14.3.1"
-  },
-  "dependencies": {}
+    "mocha": "^11.7.5",
+    "safe-buffer": "^5.2.1",
+    "standard": "^17.1.2"
+  }
 }
